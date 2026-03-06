@@ -4,32 +4,6 @@ A minimal AI-powered courtroom simulation that orchestrates **three GPT agents**
 
 ---
 
-## 📐 Architecture
-
-```
-User Case Description
-        │
-        ▼
-  RAG Retriever
-  (FAISS + sentence-transformers)
-        │
-        ▼
-Shared Legal Context
-        │
- ┌──────┴──────┐
- ▼             ▼
-Prosecutor   Defense
-  GPT          GPT
- └──────┬──────┘
-        ▼
-    Judge GPT
-        │
-        ▼
-  Final Verdict
-```
-
----
-
 ## 🤖 Agents
 
 | Agent | Role | Temperature |
