@@ -2,12 +2,11 @@ In this AI-powered courtroom simulation, we have three GPT agents playing the ro
 
 The RAG pipeline works by having the agents generate a query based on the current state of the simulation, which is then used to retrieve relevant legal principles from a database. These principles are then used by the agents to generate more detailed and grounded arguments, which can be used to persuade the Judge in their favor.
 
-This simulation allows us to explore how AI agents can be used to simulate complex legal scenarios and how they can be used to generate arguments and legal principles in a more efficient and effective manner.
-| Agent              | Role                                                      | Temperature |
+This simulation allows us to explore how AI agents can be used to simulate complex legal scenarios and how they can be used to generate arguments and legal principles in a more efficient and effective manner.| Agent | Role | Temperature |
 | ------------------ | --------------------------------------------------------- | ----------- |
-| **Prosecutor GPT** | Argues the defendant is GUILTY                            | 0.75        |
-| **Defense GPT**    | Argues the defendant is NOT GUILTY                        | 0.75        |
-| **Judge GPT**      | Evaluates both sides, delivers verdict + confidence score | 0.3         |
+| **Prosecutor GPT** | Argues the defendant is GUILTY | 0.75 |
+| **Defense GPT** | Argues the defendant is NOT GUILTY | 0.75 |
+| **Judge GPT** | Evaluates both sides, delivers verdict + confidence score | 0.3 |
 
 Each agent has a distinct system prompt that defines its persona, objectives, and a strict structured output format.
 
@@ -119,54 +118,5 @@ Change `top_k` in `run_trial()` to retrieve more or fewer legal passages.
 - **Swap model**: Change `OPENAI_MODEL` in `.env`
 - **Add agents**: Follow the pattern in `agents.py` — define a system prompt + a function
 - **Swap retriever**: Replace the FAISS index with any vector DB (Chroma, Pinecone, etc.)
-  Last updated: 2026-03-21 22:42:55.235244
 
-Last updated: 2026-03-21 22:43:13.702136
-
-Last updated: 2026-03-21 22:43:23.346252
-
-Last updated: 2026-03-21 22:45:11.128016
-
-Last updated: 2026-03-21 22:45:21.708070
-
-Last updated: 2026-03-21 22:45:31.555039
-
-Last updated: 2026-03-21 22:47:16.410285
-
-Last updated: 2026-03-21 22:49:57.664434
-
-Last updated: 2026-03-21 22:50:30.935957
-
-Last updated: 2026-03-21 22:51:42.751354
-
-Last updated: 2026-03-21 22:51:51.236502
-
-Last updated: 2026-03-21 22:52:14.163938
-
-Last updated: 2026-03-21 22:52:36.862949
-
-Last updated: 2026-03-21 22:53:35.821838
-
-Last updated: 2026-03-21 22:55:06.806869
-
-Last updated: 2026-03-21 22:55:33.741056
-
-Last updated: 2026-03-21 22:56:10.620661
-
-Last updated: 2026-03-21 22:56:18.111093
-
-Last updated: 2026-03-21 22:56:30.554070
-
-Last updated: 2026-03-21 22:56:55.749199
-
-Last updated: 2026-03-21 22:59:13.194355
-
-Last updated: 2026-03-21 22:59:37.984816
-
-Last updated: 2026-03-21 23:01:09.284388
-
-Last updated: 2026-03-21 23:01:33.185757
-
-Last updated: 2026-03-21 23:14:15.751021
-
-Last updated: 2026-03-21 23:15:44
+Last updated: 2026-03-21 23:16:45
